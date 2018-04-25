@@ -1,0 +1,10 @@
+	public boolean execute(String sql)        ==>  DDL and DML
+	public int executeUpdate(String sql)      ==> Only for DML
+	public ResultSet executeQuery(String sql) ==> DQL
+	public int[] executeBatch()               ==>DML
+
+
+==>for DML command prefer to use only executeUpdate(), why because it's returns how many records are inserted or
+deleted.
+
+==>multi number of DML command than use executeBatch(); 
